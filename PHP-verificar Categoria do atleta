@@ -1,0 +1,40 @@
+Algoritmo para Verificar em qual categoria a partir da Idade o atetla está apto a competir.
+
+<?php
+$categorias = [];
+$categorias [] = 'Infantil';
+$categorias [] = 'Adolescente';
+$categorias [] = 'Adulto';
+
+
+$Nome = "Valêncio";
+$Idade = 25;
+
+if($Idade <= 12 ){
+
+    for($i = 0; $i < count ($categorias); $i++ ){
+
+        if($categorias[$i] == 'Infantil')
+
+    echo "O nadador ".$Nome. " Compete na Categoria " .$categorias[$i];
+
+    }
+}else if($Idade > 12 && $Idade <= 18 ){
+    
+
+    for($i = 0 ; $i < count ($categorias); $i++)
+
+    if($categorias[$i] == 'Adolescente') 
+
+    echo " O nadador " .$Nome. " Compete na categoria  "  .$categorias[$i];
+
+}else{
+    
+    for($i = 0; $i < count ($categorias); $i++ )
+
+    if($categorias[$i] == 'Adulto')
+
+      echo "O nadador " .$Nome. "Compete na categoria " .$categorias[$i];
+  
+}
+?>
